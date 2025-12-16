@@ -25,10 +25,15 @@
                 <header class="flex items-center justify-between mb-6">
                     <h1 class="text-2xl font-bold text-pink-700">Dashboard para usuarios logeados</h1>
                     <div class="flex items-center gap-4">
-                        <a href="/"><button type="submit"
-                        class="w-full bg-pink-500 hover:bg-purple-500 text-white font-semibold py-2 rounded-lg transition">Cerrar sesión</button></a>
-                        <div class="mx-auto mb-3 w-15 rounded-full flex items-center justify-center"><img
-                        src="{{ asset('img/fresa.png') }}" alt=""></div>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit"
+                                class="w-full bg-pink-500 hover:bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg transition">
+                                Cerrar sesión
+                            </button>
+                        </form>
+                        <div class="mx-auto mb-3 w-12 rounded-full flex items-center justify-center">
+                            {{ Auth::user()->name }}</div>
                     </div>
                 </header>
 

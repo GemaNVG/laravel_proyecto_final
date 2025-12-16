@@ -13,11 +13,13 @@
               </tr>
             </thead>
             <tbody class="divide-y text-black">
+              @foreach($user as $user)
               <tr>
-                <td class="py-2">prueba</td>
-                <td>prueba@email.com</td>
-                <td>date</td>
+                <td class="py-2">{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
+                <td>{{ $user->created_at }}</td>
               </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

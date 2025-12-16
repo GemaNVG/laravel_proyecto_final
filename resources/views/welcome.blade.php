@@ -11,7 +11,7 @@
 
             <!-- Logo / Title -->
             <div class="text-center mb-8">
-                <div class="mx-auto mb-3 w-30 rounded-full flex items-center justify-center"><img
+                <div class="mx-auto mb-3 w-10 rounded-full flex items-center justify-center"><img
                         src="{{ asset('img/fresa.png') }}" alt=""></div>
                 <h1 class="text-2xl font-bold">Bienvenido/a</h1>
                 <p class="text-slate-500 text-sm">Inicia sesión para continuar</p>
@@ -50,7 +50,7 @@
                 <span class="text-sm text-slate-400">o</span>
                 <hr class="flex-1">
             </div>
-            <button type="submit"
+            <a href="/google-auth/redirect"><button type="submit"
                 class="w-full bg-pink-500 hover:bg-purple-500 text-white font-semibold py-2 rounded-lg transition">
                 <div class="flex items-center justify-center gap-3">
                     <span>Iniciar sesión con Google</span>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-            </button>
+            </button></a>
 
 
         </div>
