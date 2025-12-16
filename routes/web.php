@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [ProfileController::class, 'getData'])->middleware(['auth', 'verified']);
+Route::get('/dashboard', [ProfileController::class, 'getData'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/report', function () {return view('report');})->middleware(['auth', 'verified']);
 
