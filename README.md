@@ -11,7 +11,7 @@ Este repositorio contiene el código fuente del proyecto final desarrollado en L
 - **Gestión de Sesiones:** Protección contra ataques CSRF y manejo seguro de sesiones.
 
 ### ⚙️ Funcionalidades del Backend
-- **Middleware:** Protección de rutas (`/dashboard`, `/profile`) accesibles solo para usuarios verificados y logueados.
+- **Middleware:** Protección de rutas (`/dashboard`) accesibles solo para usuarios verificados y logueados.
 - **Base de Datos:** Migraciones personalizadas para incluir campos necesarios como `username` y `google_id`.
 - **Manejo de Errores:** Control de excepciones para estados inválidos en OAuth y redireccionamientos seguros.
 
